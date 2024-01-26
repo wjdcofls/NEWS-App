@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="5dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/cardview_dark_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_margin="5dp"
+                android:id="@+id/image"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:id="@+id/title"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With everything else going on, you may not have noticed that the Grammy Awards are happening tomorrow, Sunday, March 14th—two months behind schedule. There will be music, there will be awards, and given that the nominees will be attending the ceremony virtual…"
+                android:id="@+id/description"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/text2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:layoutDirection="ltr"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timestamp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/text2"
+                    android:text="2021-03-13T14:00:00Z"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layoutDirection="rtl"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        app:cardBackgroundColor="@color/Secondary"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/read_btn"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_height="25dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Read"
+                            android:layout_gravity="center"></TextView>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
